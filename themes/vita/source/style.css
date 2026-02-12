@@ -159,6 +159,27 @@ section .location {
     font-weight: 300;
 }
 
+.lang-switcher {
+    float: right;
+    display: flex;
+    gap: 0.35rem;
+}
+
+.lang-switcher a {
+    border: 1px solid #d1d9e0;
+    border-radius: 4px;
+    color: #5b6570;
+    font-size: 0.78rem;
+    line-height: 1;
+    padding: 0.25rem 0.45rem;
+}
+
+.lang-switcher a.active {
+    border-color: #0095ff;
+    color: #0095ff;
+    font-weight: 600;
+}
+
 #header .picture {
     width: 11em;
     float: right;

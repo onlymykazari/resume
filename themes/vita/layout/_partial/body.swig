@@ -1,20 +1,29 @@
+{% set current_lang = page.lang || theme.default_lang || 'zh-CN' %}
+{% set localized_resume = site.data.resume and site.data.resume[current_lang] %}
+{% set resume = localized_resume || theme.resume %}
+
 <div id="resume">
     <header id="header" class="clear">
+        <div class="lang-switcher">
+            <a href="{{ config.root }}" class="{% if current_lang == 'zh-CN' %}active{% endif %}">简</a>
+            <a href="{{ config.root }}zh-tw/" class="{% if current_lang == 'zh-TW' %}active{% endif %}">繁</a>
+            <a href="{{ config.root }}en/" class="{% if current_lang == 'en' %}active{% endif %}">EN</a>
+        </div>
         <div>
-            <h1 class="name">{{ theme.resume.name }}</h1>
-            <h2 class="label">{{ theme.resume.jobtitle }}</h2>
+            <h1 class="name">{{ resume.name }}</h1>
+            <h2 class="label">{{ resume.jobtitle }}</h2>
         </div>
 
         <span class="location">
-            {% for item in theme.resume.location %}
+            {% for item in resume.location %}
             <span class="{{ item.key }}">{{ item.value }},</span>
             {% endfor %}
         </span>
 
 
         <div id="contact">
-            {% for item in theme.resume.contact %}
-            <div ">
+            {% for item in resume.contact %}
+            <div>
                 <span class=" fa {{item.icon}}"></span>
                 <a target="_blank" href="{{item.text}}">{{item.text}}</a>
             </div>
@@ -22,7 +31,7 @@
         </div>
 
         <div id="profiles">
-            {% for item in theme.resume.profiles %}
+            {% for item in resume.profiles %}
             <div class="item">
                 <div class="username">
                     <span class="fa {{item.icon}} social"></span>
@@ -38,17 +47,17 @@
     <section class="section main-summary">
         <section>
             <div>
-                <p>{{theme.resume.overview}}</p>
+                <p>{{resume.overview}}</p>
             </div>
         </section>
     </section>
 
     <section class="section margin1">
         <header>
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">{{ __('resume.skills') }}</h2>
         </header>
         <section id="skills">
-            {% for item in theme.resume.skills %}
+            {% for item in resume.skills %}
             <div class="item">
                 <h3 class="name">
                     {{item.title}}
@@ -70,11 +79,11 @@
 
     <section class="section">
         <header>
-            <h2 class="section-title">Work Experience <span
-                    class="item-count">({{theme.resume.experience.length}})</span></h2>
+            <h2 class="section-title">{{ __('resume.work_experience') }} <span
+                    class="item-count">({{resume.experience.length}})</span></h2>
         </header>
 
-        {% for item in theme.resume.experience %}
+        {% for item in resume.experience %}
         <section class="work-item">
 
             <input id="work-item-{{ loop.index }}" type="checkbox" class="toggle-item" checked="checked">
@@ -110,11 +119,11 @@
 
     <section class="section">
         <header>
-            <h2 class="section-title">Education <span class="item-count">(1)</span></h2>
+            <h2 class="section-title">{{ __('resume.education') }} <span class="item-count">({{resume.education.length}})</span></h2>
         </header>
 
         <section id="education">
-            {% for item in theme.resume.education %}
+            {% for item in resume.education %}
             <section class="education-item">
                 <header>
                     <div class="header">
@@ -143,9 +152,9 @@
 
     <section class="section">
         <header>
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">{{ __('resume.projects') }}</h2>
         </header>
-        {% for item in theme.resume.projects %}
+        {% for item in resume.projects %}
         <section id="project">
             <section class="project-item">
                 <input id="project-item-{{ loop.index }}" type="checkbox" class="toggle-item" checked="checked">
@@ -180,10 +189,10 @@
 
     <section class="section margin1">
         <header>
-            <h2 class="section-title">Languages</h2>
+            <h2 class="section-title">{{ __('resume.languages') }}</h2>
         </header>
         <section id="languages">
-            {% for item in theme.resume.languages %}
+            {% for item in resume.languages %}
             <div class="display">
                 <h3 class="language">
                     {{item.name}}

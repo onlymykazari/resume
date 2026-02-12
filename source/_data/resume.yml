@@ -1,0 +1,152 @@
+zh-CN:
+  name: 张三
+  jobtitle: 前端开发工程师
+  location:
+    - key: city
+      value: 上海
+    - key: countryCode
+      value: CN
+  contact:
+    - icon: fa-envelope
+      text: zhangsan@example.com
+    - icon: fa-phone-square
+      text: +86-138-0000-0000
+  profiles:
+    - icon: fa-github
+      text: onlymykazari
+      link: https://github.com/onlymykazari
+  overview: 5年 Web 开发经验，专注于前端工程化、性能优化和业务交付。
+  skills:
+    - title: 前端
+      level: advanced
+      items: [JavaScript, TypeScript, Vue, React]
+    - title: 工程化
+      level: intermediate
+      items: [Vite, Webpack, CI/CD]
+  experience:
+    - position: 前端开发工程师
+      duration: 2021 - 至今
+      company: 某科技公司
+      website: https://example.com
+      description: 负责中后台与活动站点开发，推动组件化和性能优化。
+      hilights:
+        - 首屏性能提升 35%
+        - 搭建统一脚手架，减少重复开发
+  education:
+    - institution: 某某大学
+      course: 软件工程（本科）
+      duration: 2013 - 2017
+      location: 中国
+      major: 软件工程
+  projects:
+    - title: 企业门户重构
+      description: 负责从旧技术栈迁移到现代前端架构并上线。
+      duration: 2023
+      contribution: 前端负责人
+  languages:
+    - name: 中文
+      proficiency: native speaker
+    - name: 英文
+      proficiency: fluent
+
+zh-TW:
+  name: 張三
+  jobtitle: 前端開發工程師
+  location:
+    - key: city
+      value: 台北
+    - key: countryCode
+      value: TW
+  contact:
+    - icon: fa-envelope
+      text: zhangsan@example.com
+    - icon: fa-phone-square
+      text: +886-900-000-000
+  profiles:
+    - icon: fa-github
+      text: onlymykazari
+      link: https://github.com/onlymykazari
+  overview: 5 年 Web 開發經驗，專注於前端工程化、效能優化與產品交付。
+  skills:
+    - title: 前端
+      level: advanced
+      items: [JavaScript, TypeScript, Vue, React]
+    - title: 工程化
+      level: intermediate
+      items: [Vite, Webpack, CI/CD]
+  experience:
+    - position: 前端開發工程師
+      duration: 2021 - 目前
+      company: 某科技公司
+      website: https://example.com
+      description: 負責後台與活動站點開發，推動元件化與效能改善。
+      hilights:
+        - 首屏效能提升 35%
+        - 建置統一腳手架，降低重複開發
+  education:
+    - institution: 某某大學
+      course: 軟體工程（學士）
+      duration: 2013 - 2017
+      location: 台灣
+      major: 軟體工程
+  projects:
+    - title: 企業入口網站重構
+      description: 主導從舊技術棧遷移到現代前端架構並上線。
+      duration: 2023
+      contribution: 前端負責人
+  languages:
+    - name: 中文
+      proficiency: native speaker
+    - name: 英文
+      proficiency: fluent
+
+en:
+  name: Victor Smith
+  jobtitle: Frontend Engineer
+  location:
+    - key: city
+      value: San Francisco
+    - key: countryCode
+      value: US
+  contact:
+    - icon: fa-envelope
+      text: victor@example.com
+    - icon: fa-phone-square
+      text: +1-415-000-0000
+  profiles:
+    - icon: fa-github
+      text: onlymykazari
+      link: https://github.com/onlymykazari
+  overview: Frontend engineer with 5 years of experience in web applications, performance optimization, and engineering productivity.
+  skills:
+    - title: Frontend
+      level: advanced
+      items: [JavaScript, TypeScript, Vue, React]
+    - title: Engineering
+      level: intermediate
+      items: [Vite, Webpack, CI/CD]
+  experience:
+    - position: Frontend Engineer
+      duration: 2021 - Present
+      company: Example Tech
+      website: https://example.com
+      description: Built internal dashboards and campaign pages with a focus on maintainability and performance.
+      hilights:
+        - Improved first-screen performance by 35%
+        - Standardized project scaffolding across teams
+  education:
+    - institution: Example University
+      course: B.S. in Software Engineering
+      duration: 2013 - 2017
+      location: United States
+      major: Software Engineering
+  projects:
+    - title: Enterprise Portal Revamp
+      description: Led migration from legacy stack to a modern frontend architecture.
+      duration: 2023
+      contribution: Frontend Lead
+  languages:
+    - name: English
+      proficiency: native speaker
+    - name: Chinese
+      proficiency: fluent
