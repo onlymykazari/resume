@@ -8,7 +8,10 @@ subtitle: ''
 description: ''
 keywords:
 author: Pang Keung
-language: zh-CN
+language:
+  - en
+  - zh-CN
+  - zh-TW
 timezone: ''
 
 # URL

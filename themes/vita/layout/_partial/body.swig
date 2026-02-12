@@ -5,9 +5,9 @@
 <div id="resume">
     <header id="header" class="clear">
         <div class="lang-switcher">
-            <a href="{{ config.root }}" class="{% if current_lang == 'zh-CN' %}active{% endif %}">简</a>
+            <a href="{{ config.root }}zh-cn/" class="{% if current_lang == 'zh-CN' %}active{% endif %}">简</a>
             <a href="{{ config.root }}zh-tw/" class="{% if current_lang == 'zh-TW' %}active{% endif %}">繁</a>
-            <a href="{{ config.root }}en/" class="{% if current_lang == 'en' %}active{% endif %}">EN</a>
+            <a href="{{ config.root }}" class="{% if current_lang == 'en' %}active{% endif %}">EN</a>
         </div>
         <div>
             <h1 class="name">{{ resume.name }}</h1>
