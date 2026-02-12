@@ -2,5 +2,5 @@
 
 ```yaml
 theme: vita
-config:/themes/vita/_config.yml
+config: /themes/vita/_config.yml
 ```
